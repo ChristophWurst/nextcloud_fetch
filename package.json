@@ -1,6 +1,6 @@
 {
   "name": "nextcloud_fetch",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Thin wrapper around modern browser's fetch API for Nextcloud",
   "main": "fetch.js",
   "scripts": {
