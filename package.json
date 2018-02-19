@@ -1,0 +1,14 @@
+{
+  "name": "nextcloud_fetch",
+  "version": "0.1.0",
+  "description": "Thin wrapper around modern browser's fetch API for Nextcloud",
+  "main": "fetch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nextcloud"
+  ],
+  "author": "Christoph Wurst",
+  "license": "MIT"
+}
