@@ -15,6 +15,6 @@ Send (JSON) requests to your Nextcloud server
 ```js
 import { nc_fetch, nc_fetch_json } from 'nextcloud_fetch'
 
-let res = nc_fetch('https://…')
-let json_res = nc_fetch_json('https://…')
+let res = nc_fetch('https://...')
+let json_res = nc_fetch_json('https://...')
 ```
