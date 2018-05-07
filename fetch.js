@@ -1,4 +1,4 @@
-module.exports = function (url, options) {
+export function nc_fetch(url, options) {
     options = options || {};
 
     // Send cookies
@@ -12,4 +12,15 @@ module.exports = function (url, options) {
     options.headers['X-Requested-With'] = 'XMLHttpRequest';
 
     return fetch(url, options);
+};
+
+export function nc_fetch_json(url, options) {
+    options = options || {};
+
+    options.headers = options.headers || {};
+    options.headers['Accept'] = 'application/json';
+    options.headers['Content-Type'] = 'application/json';
+    options.headers['requesttoken'] = OC.requestToken;
+
+    return nc_fetch(url, options);
 };
