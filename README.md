@@ -8,9 +8,10 @@ Install the package via npm
 npm install --save nextcloud_fetch
 ```
 
-Send requests to your Nextcloud server
+Send (JSON) requests to your Nextcloud server
 ```js
-let nc_fetch = require('nextcloud_fetch')
+import { nc_fetch, nc_fetch_json } from 'nextcloud_fetch'
 
-let res = nc_fetch('…')
+let res = nc_fetch('https://…')
+let json_res = nc_fetch_json('https://…')
 ```
